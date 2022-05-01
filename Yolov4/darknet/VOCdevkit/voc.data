@@ -1,0 +1,6 @@
+classes= 7
+train  = /content/darknet/VAID_dataset/Yolov4/darknet/VOCdevkit/train.txt
+valid  = /content/darknet/VAID_dataset/Yolov4/darknet/VOCdevkit/2007_test_test.txt
+names = /content/darknet/VAID_dataset/Yolov4/darknet/data/voc.names
+backup = /content/darknet/VAID_dataset/Yolov4/darknet/backup/
+
