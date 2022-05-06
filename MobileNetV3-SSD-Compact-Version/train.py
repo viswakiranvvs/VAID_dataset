@@ -19,11 +19,11 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Learning parameters
 checkpoint =None #  path to model checkpoint, None if none
-batch_size = 32  # batch size 
+batch_size = 64  # batch size 
 # iterations = 120000  # number of iterations to train  120000
 workers = 8  # number of workers for loading data in the DataLoader 4
 print_freq = 200  # print training status every __ batches
-lr =1e-2  # learning rate
+lr =1e-1  # learning rate
 #decay_lr_to = 0.1  # decay learning rate to this fraction of the existing learning rate
 momentum = 0.9  # momentum
 weight_decay = 5e-4  # weight decay
@@ -89,7 +89,7 @@ def main():
     # Calculate total number of epochs to train and the epochs to decay learning rate at (i.e. convert iterations to epochs)
     # To convert iterations to epochs, divide iterations by the number of iterations per epoch
     # now it is mobilenet v3,VGG paper trains for 120,000 iterations with a batch size of 32, decays after 80,000 and 100,000 iterations,
-    epochs = 4
+    epochs = 5
     # decay_lr_at =[154, 193]
     # print("decay_lr_at:",decay_lr_at)
     print("epochs:",epochs)
