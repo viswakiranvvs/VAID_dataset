@@ -13,7 +13,7 @@ batch_size = 64
 workers = 4
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-checkpoint = './checkpoint_ssd300.pth.tar'
+checkpoint = '/content/VAID_dataset/MobileNetV3-SSD-Compact-Version/checkpoint_ssd300.pth.tar'
 
 # Load model checkpoint that is to be evaluated
 checkpoint = torch.load(checkpoint)
